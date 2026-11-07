@@ -54,3 +54,29 @@ main section {
     background-color: #e8f5e9;
     border: 1px solid #1b5e20;
 }
+
+/* CHECKPOINT 8 - EFEITOS VISUAIS */
+
+/* Destacar linha da tabela ao passar o mouse */
+.tabela-sessoes tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+/* Animacao suave dos cartoes */
+.filme {
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Elevar o cartao ao passar o mouse */
+.filme:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Asterisco vermelho nos campos obrigatorios */
+.obrigatorio::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}

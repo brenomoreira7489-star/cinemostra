@@ -90,3 +90,23 @@ nav a {
     font-size: 1.1rem;
     text-transform: uppercase;
 }
+
+/* CHECKPOINT 8 - EFEITOS DOS MENUS */
+
+/* Efeito no menu horizontal */
+.menu-horizontal a {
+    transition: color 0.2s ease;
+}
+
+.menu-horizontal a:hover {
+    color: #c8e6c9;
+}
+
+/* Efeito no menu vertical */
+.menu-vertical a {
+    transition: background-color 0.2s ease;
+}
+
+.menu-vertical a:hover {
+    background-color: #e8f5e9;
+}
