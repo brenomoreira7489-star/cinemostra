@@ -1,0 +1,56 @@
+
+/* CHECKPOINT 7 - COMPONENTES.CSS */
+
+/* 7.1 - Tabela de sessoes */
+.tabela-sessoes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 7.2 - Celulas da tabela */
+th, td {
+    padding: 12px;
+    border: 1px solid #cccccc;
+}
+
+/* 7.3 - Cabecalho da tabela */
+thead {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* 7.4 - Efeito zebra nas linhas */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 7.5 e 7.6 - Secoes em formato de cartao */
+main section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px 28px 24px 16px;
+    margin-bottom: 20px;
+}
+
+/* 7.7 - Cartoes dos filmes */
+.filme {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Imagens dos filmes */
+.filme img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7.8 - Filme em destaque */
+/* Esta regra deve vir depois de .filme */
+.destaque {
+    background-color: #e8f5e9;
+    border: 1px solid #1b5e20;
+}
