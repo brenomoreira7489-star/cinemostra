@@ -1,0 +1,17 @@
+
+/* CHECKPOINT 5 - LAYOUT.CSS */
+
+/* 5.6 - Cabecalho do site */
+.topo {
+    background-color: #1b5e20;
+    color: white;
+    padding: 24px;
+}
+
+/* 5.6 - Rodape do site */
+.rodape {
+    background-color: #1b5e20;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}

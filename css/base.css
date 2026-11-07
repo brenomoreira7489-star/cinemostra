@@ -1,0 +1,57 @@
+
+/* CHECKPOINT 5 - BASE.CSS */
+
+/* 5.1 - Reset universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 5.2 - Estilos gerais da pagina */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f4;
+    color: #222222;
+}
+
+/* 5.3 - Tamanhos dos titulos */
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* 5.4 - Paragrafos */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Introducao da programacao */
+.introducao {
+    max-width: 700px;
+}
+
+/* 5.5 - Genero dos filmes */
+.genero {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sinopse dos filmes */
+.sinopse {
+    font-size: 0.95em;
+}
+
+/* Preco dos ingressos */
+.preco {
+    font-weight: bold;
+    color: #1b5e20;
+}
