@@ -50,7 +50,9 @@
                 Consulte o
                 <a href="https://example.com/regulamento"
                    target="_blank"
-                   rel="noopener noreferrer">regulamento</a>
+                   rel="noopener noreferrer">
+                    regulamento
+                </a>
                 ou veja os
                 <a href="#filmes">filmes em cartaz</a>.
             </p>
@@ -66,6 +68,7 @@
                             <th>Ingresso</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td>O Trem das Seis e Meia</td>
@@ -209,7 +212,7 @@
                 <article class="filme">
                     <img
                         src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600"
-                        alt="Calendário e relógio representando a passagem do tempo">
+                        alt="Calendário representando a passagem repetida do tempo">
 
                     <header class="filme-topo">
                         <h3>Quarta-feira Sem Fim</h3>
@@ -236,8 +239,6 @@
                 <li>Informe seus dados</li>
                 <li>Confirme a reserva</li>
             </ol>
-
-            <!-- Checkpoint 3: formulário de reserva -->
 
             <form id="formReserva" class="formulario" method="POST">
 
@@ -302,35 +303,25 @@
                             Filme
                         </label>
 
-                        <select
-                            id="filme"
-                            name="filme"
-                            required>
-
+                        <select id="filme" name="filme" required>
                             <option value="" disabled selected>
                                 Escolha um filme
                             </option>
-
                             <option value="trem">
                                 O Trem das Seis e Meia
                             </option>
-
                             <option value="sol">
                                 Cinco Dias de Sol
                             </option>
-
                             <option value="rio">
                                 Vozes do Rio Pardo
                             </option>
-
                             <option value="mare">
                                 A Casa da Maré
                             </option>
-
                             <option value="astro">
                                 Pequeno Astro
                             </option>
-
                             <option value="quarta">
                                 Quarta-feira Sem Fim
                             </option>
@@ -432,10 +423,20 @@
             </form>
         </section>
 
+        <!-- Checkpoint 4: mapa de localização -->
+
         <section id="local">
             <h2>Como chegar</h2>
 
-            <!-- Checkpoint 4: o iframe do mapa entra aqui -->
+            <iframe
+                class="mapa"
+                src="https://maps.google.com/maps?q=Praca+da+Liberdade+Belo+Horizonte+MG&amp;z=15&amp;output=embed"
+                title="Mapa da Praça da Liberdade em Belo Horizonte, Minas Gerais"
+                width="800"
+                height="450"
+                loading="lazy">
+            </iframe>
+
         </section>
 
     </main>
@@ -465,4 +466,3 @@
 
 </body>
 </html>
-    
