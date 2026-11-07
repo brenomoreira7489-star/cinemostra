@@ -50,9 +50,7 @@
                 Consulte o
                 <a href="https://example.com/regulamento"
                    target="_blank"
-                   rel="noopener noreferrer">
-                    regulamento
-                </a>
+                   rel="noopener noreferrer">regulamento</a>
                 ou veja os
                 <a href="#filmes">filmes em cartaz</a>.
             </p>
@@ -68,7 +66,6 @@
                             <th>Ingresso</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>O Trem das Seis e Meia</td>
@@ -212,7 +209,7 @@
                 <article class="filme">
                     <img
                         src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600"
-                        alt="Relógio representando a passagem repetida do tempo">
+                        alt="Calendário e relógio representando a passagem do tempo">
 
                     <header class="filme-topo">
                         <h3>Quarta-feira Sem Fim</h3>
@@ -240,7 +237,199 @@
                 <li>Confirme a reserva</li>
             </ol>
 
-            <!-- Checkpoint 3: o formulário entra aqui -->
+            <!-- Checkpoint 3: formulário de reserva -->
+
+            <form id="formReserva" class="formulario" method="POST">
+
+                <h3>Dados do espectador</h3>
+
+                <div class="grupo">
+
+                    <div class="campo campo-largo">
+                        <label for="nome" class="obrigatorio">
+                            Nome completo
+                        </label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            minlength="3"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email" class="obrigatorio">
+                            E-mail
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">
+                            Telefone
+                        </label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            pattern="[0-9]{10,11}"
+                            title="Digite o DDD e o número, somente números">
+                    </div>
+
+                    <div class="campo">
+                        <label for="nascimento">
+                            Data de nascimento
+                        </label>
+                        <input
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            max="2026-11-07">
+                    </div>
+
+                </div>
+
+                <h3>Sessão</h3>
+
+                <div class="grupo">
+
+                    <div class="campo campo-largo">
+                        <label for="filme" class="obrigatorio">
+                            Filme
+                        </label>
+
+                        <select
+                            id="filme"
+                            name="filme"
+                            required>
+
+                            <option value="" disabled selected>
+                                Escolha um filme
+                            </option>
+
+                            <option value="trem">
+                                O Trem das Seis e Meia
+                            </option>
+
+                            <option value="sol">
+                                Cinco Dias de Sol
+                            </option>
+
+                            <option value="rio">
+                                Vozes do Rio Pardo
+                            </option>
+
+                            <option value="mare">
+                                A Casa da Maré
+                            </option>
+
+                            <option value="astro">
+                                Pequeno Astro
+                            </option>
+
+                            <option value="quarta">
+                                Quarta-feira Sem Fim
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="dia" class="obrigatorio">
+                            Dia
+                        </label>
+                        <input
+                            type="date"
+                            id="dia"
+                            name="dia"
+                            min="2026-11-07"
+                            max="2026-11-13"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="ingressos" class="obrigatorio">
+                            Ingressos
+                        </label>
+                        <input
+                            type="number"
+                            id="ingressos"
+                            name="ingressos"
+                            min="1"
+                            max="6"
+                            step="1"
+                            value="1"
+                            required>
+                    </div>
+
+                    <div class="campo campo-largo">
+                        <p id="rotulo-horario">
+                            Horário da sessão
+                        </p>
+
+                        <div class="opcoes"
+                             role="group"
+                             aria-labelledby="rotulo-horario">
+
+                            <label for="horario14">
+                                <input
+                                    type="radio"
+                                    id="horario14"
+                                    name="horario"
+                                    value="14h00"
+                                    checked>
+                                14h00
+                            </label>
+
+                            <label for="horario17">
+                                <input
+                                    type="radio"
+                                    id="horario17"
+                                    name="horario"
+                                    value="17h00">
+                                17h00
+                            </label>
+
+                            <label for="horario20">
+                                <input
+                                    type="radio"
+                                    id="horario20"
+                                    name="horario"
+                                    value="20h00">
+                                20h00
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="acoes">
+
+                    <button
+                        type="reset"
+                        class="botao botao-secundario">
+                        Limpar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="botao botao-secundario">
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="botao botao-principal">
+                        Reservar
+                    </button>
+
+                </div>
+
+            </form>
         </section>
 
         <section id="local">
