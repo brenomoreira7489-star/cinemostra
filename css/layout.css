@@ -110,3 +110,76 @@ nav a {
 .menu-vertical a:hover {
     background-color: #e8f5e9;
 }
+
+/* CHECKPOINT 9 - LAYOUT COM FLEXBOX */
+
+/* 9.1 - Cabeçalho */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 28px;
+}
+
+/* 9.2 - Menu horizontal */
+.menu-horizontal ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.menu-horizontal li {
+    margin: 0;
+    display: block;
+}
+
+/* 9.3 - Grade dos filmes */
+.grade-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.grade-filmes .filme {
+    flex: 1 1 260px;
+    min-width: 0;
+}
+
+/* 9.4 - Título e classificação */
+.filme-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 9.5 - Campos do formulário */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* 9.6 - Rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
