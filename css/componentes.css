@@ -80,3 +80,42 @@ main section {
     color: red;
     font-weight: bold;
 }
+
+/* =========================================
+   CHECKPOINT 12 - ESTILOS DOS BOTÕES
+========================================= */
+
+/* 12.1 - Estilo geral dos botões */
+.botao {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+/* 12.2 - Botão principal */
+.botao-principal {
+    background-color: #1b5e20;
+    color: white;
+    border: 1px solid #1b5e20;
+}
+
+/* 12.3 - Efeito hover do botão principal */
+.botao-principal:hover {
+    background-color: #0d3b12;
+}
+
+/* 12.4 - Botão secundário */
+.botao-secundario {
+    background-color: transparent;
+    color: #1b5e20;
+    border: 1px solid #1b5e20;
+}
+
+/* Efeito hover do botão secundário */
+.botao-secundario:hover {
+    background-color: #1b5e20;
+    color: white;
+}
