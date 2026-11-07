@@ -183,3 +183,60 @@ nav a {
     flex-wrap: wrap;
     gap: 16px;
 }
+
+/* =========================================
+   CHECKPOINT 10 - CSS GRID
+========================================= */
+
+/* 10.1, 10.2 e 10.3 - Estrutura da página */
+body {
+    display: grid;
+    min-height: 100vh;
+
+    grid-template-columns: 1fr 260px;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "topo topo"
+        "conteudo lateral"
+        "rodape rodape";
+
+    column-gap: 24px;
+}
+
+/* 10.4 - Áreas do Grid */
+.topo {
+    grid-area: topo;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    padding: 20px 16px;
+    min-width: 0;
+}
+
+.lateral {
+    grid-area: lateral;
+    padding: 20px 16px;
+    min-width: 0;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+/* 10.5 - Layout para celulares */
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            auto 1fr auto auto;
+
+        grid-template-areas:
+            "topo"
+            "conteudo"
+            "lateral"
+            "rodape";
+    }
+}
