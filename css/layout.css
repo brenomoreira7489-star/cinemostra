@@ -1,17 +1,92 @@
 
-/* CHECKPOINT 5 - LAYOUT.CSS */
+/* CHECKPOINT 5 E 6 - LAYOUT.CSS */
 
-/* 5.6 - Cabecalho do site */
+/* Cabecalho */
 .topo {
     background-color: #1b5e20;
     color: white;
     padding: 24px;
 }
 
-/* 5.6 - Rodape do site */
+/* Rodape */
 .rodape {
     background-color: #1b5e20;
     color: white;
     padding: 24px;
     text-align: center;
+}
+
+/* 6.1 - Estados dos links dentro do main */
+
+main a:link {
+    color: #1b5e20;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #6a1b9a;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:active {
+    color: #e65100;
+}
+
+/* 6.2 - Links dos menus */
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 6.3 - Menu horizontal */
+
+.menu-horizontal ul {
+    list-style: none;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.menu-horizontal a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal a.ativo {
+    border-bottom: 3px solid white;
+}
+
+/* 6.4 - Menu vertical */
+
+.menu-vertical ul {
+    list-style: none;
+}
+
+.menu-vertical a {
+    display: block;
+    padding: 10px 12px;
+}
+
+.menu-vertical li {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 6.5 - Lista de passos */
+
+.passos {
+    list-style-type: decimal-leading-zero;
+    margin-left: 20px;
+}
+
+/* 6.6 - Titulo da barra lateral */
+
+.lateral > h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
